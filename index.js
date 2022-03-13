@@ -1,4 +1,4 @@
-const myEmojis = ["👨‍💻", "⛷", "🍲"]
+const myEmojis = ["👨‍💻", "⛷", "🍲", "😂", "🍰", "🎉"]
 
 function renderEmojis() {
     const emojiContainer = document.getElementById("emoji-container")
@@ -13,7 +13,7 @@ function renderEmojis() {
 renderEmojis()
 
 const pushBtn = document.getElementById("push-btn")
-pushBtn.addEventListener("click", function(){
+pushBtn.addEventListener("click", function () {
     const emojiInput = document.getElementById("emoji-input")
     if (emojiInput.value) {
         myEmojis.push(emojiInput.value)
@@ -23,7 +23,7 @@ pushBtn.addEventListener("click", function(){
 })
 
 const unshiftBtn = document.getElementById("unshift-btn")
-unshiftBtn.addEventListener("click", function(){
+unshiftBtn.addEventListener("click", function () {
     const emojiInput = document.getElementById("emoji-input")
     if (emojiInput.value) {
         myEmojis.unshift(emojiInput.value)
@@ -33,13 +33,13 @@ unshiftBtn.addEventListener("click", function(){
 })
 
 const popBtn = document.getElementById("pop-btn")
-popBtn.addEventListener("click", function(){
+popBtn.addEventListener("click", function () {
     myEmojis.pop()
     renderEmojis()
 })
 
 const shiftBtn = document.getElementById("shift-btn")
-shiftBtn.addEventListener("click", function(){
+shiftBtn.addEventListener("click", function () {
     myEmojis.shift()
     renderEmojis()
 })
